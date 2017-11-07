@@ -14,7 +14,7 @@ router.use(bodyParser.urlencoded({ extended: true })); // for parsing applicatio
 //#########################################
 
 // GET with URI with querry  /readNameAndRespond?name=Lynne
-router.get('http://csweb01.csueastbay.edu/~pg4425/ExerciseNodeJS/getMyNodeResults.php', function(req, res, next) {
+router.get('/ReadRequest', function(req, res, next) {
     //expecting data variable called name --retrieve value using body-parser
     var body = JSON.stringify(req.body);  //if wanted entire body as JSON
     var params = JSON.stringify(req.params);//if wanted parameters
